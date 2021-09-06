@@ -1,0 +1,147 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cognitive Cavern: Quiz </title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body class = "quiz">
+<div class="parallax">
+    <script src="script.js"></script>
+   <center> <div class = "opening">
+      <ul>
+        
+      <li><a href= "index.html">Home</a></li>
+       <li><a href= "matrix.html">Matrix</a></li>
+
+      <li><a href="checklist.html">Check List</a></li>
+      <li><a class = "active" href="quiz.html">Quiz</a></li>
+      <li><a href="info.html">Learn More</a></li>
+       <li> <span class = "tag"> Cognitive Cavern</span></li>
+      </ul>
+    </div> </center>
+
+
+ 
+   <div class = "top1" > <center> <h1>The Cavern Awareness Quiz</h1> </center> </div>
+<div class="main">
+
+  <h3>
+  Fill out the quiz to see how mentally aware you are! </h3>
+<br>
+    <form id="survey-form">
+ 
+    
+      <fieldset> 
+        <legend>1. You had a long and tiring day, and are now ready to destress, but realize that you have to get up early the next morning. Do you… 
+        </legend>
+        <input type="radio" name="q1" id = "b" value="b" >Finish up some work that isn’t top priority but you can get done early<br>
+        <input type="radio" name="q1" id="a" value="a"  />Go to bed and get as much sleep as you can<br>
+        <input type="radio" name="q1" id="c" value="c" />Play some video games and stay up late until you can’t keep your eyes open<br>
+      </fieldset>
+     </br>
+
+     <fieldset> 
+        <legend>2. A research project that you had a month to work on is due the day after tomorrow. However, you were only able to complete 75 % of it due to your teammates not doing their share of work. Do you… 
+        </legend>
+        
+        <input type="radio" name="q2" id = "a" value="a" >Take some time to calm yourself and destress, before explaining to your teammates that they need to pick up their slack so you can all get the best outcome possible?<br>
+        <input type="radio" name="q2" id="b" value="b"  />Stay up today and tomorrow night to quietly complete your work yourself?<br />
+        <input type="radio" name="q2" id="c" value="c" /> Yell at your teammates and leave the rest of the work to them?<br>
+      </fieldset>
+     </br>
+
+    
+   
+      <fieldset> 
+        <legend>3. Almost all of your friends are going to try some new hallucinogenic substance that is becoming popular on the streets tonight. They insist that you have some fun and join. Will you… 
+        </legend>
+        <input type="radio" name="q3" id = "c" value="c" >Reluctantly accept their invitation?<br>
+        <input type="radio" name="q3" id="b" value="b"  />Placate them by saying that you will come a little later before not showing up?<br>
+        <input type="radio" name="q3" id="a" value="a" />Stand your ground and explain to them why you do not want to participate?<br>
+      </fieldset>
+     </br>
+
+    <fieldset> 
+        <legend>4. A friendly neighbor you know has confessed to sometimes not getting enough sleep because they are kept up by panic attacks. A lot of the other neighbors joke that he/she should “go to a mental asylum.” Will you...
+        </legend>
+        <input type="radio" name="q4" id = "c" value="c" >Go along with the crowd?<br>
+        <input type="radio" name="q4" id="b" value="b"  />Publicly shame the other neighbors for their insensitivity on social media?<br>
+        <input type="radio" name="q4" id="a" value="a" />Discourage the negative behavior towards your neighbor and help them in any way possible?<br>
+      </fieldset>
+     </br>
+
+      
+
+       <fieldset> 
+        <legend>5. A friend of yours admits that they are  very stressed with all of the work piling up on them. They also think that they are developing some sort of anxiety because of it. How do you respond?
+        </legend>
+        <input type="radio" name="q5" id = "a" value="c" >"Just get over it already..."<br>
+        <input type="radio" name="q5" id="c" value="a" />"Oh no, it sounds like you should go see your doctor/therapist to talk about this. And remember, you can always ask me or your family members for help if you're feeling overwhelmed."<br>
+        <input type="radio" name="q5" id="b" value="b"  />"Don't worry about it, you'll feel better in no time!"<br>
+      </fieldset>
+     </br>
+
+       
+
+       <fieldset> 
+        <legend>6. Your sibling seems to have a mental condition. Do you… 
+        </legend>
+        <input type="radio" name="q6" id = "a" value="a" >Make sure they know they can always come to you for help, and if needed, ask about any extremely concerning issues?<br>
+        <input type="radio" name="q6" id="b" value="b"  />Confront them bluntly in a private space?<br>
+        <input type="radio" name="q6" id="c" value="c" />Wait to ask in front of your parents during dinner?<br>
+      </fieldset>
+     </br>
+
+    <fieldset> 
+        <legend>7. You feel a little empty without any productive work to do and nothing on your priority list. Do you…
+        </legend>
+        <input type="radio" name="q7" id="b" value="b"  />Passively scroll through your phone in boredom even though you know you aren’t paying much attention to it?<br>
+        <input type="radio" name="q7" id = "a" value="a" >Spend your time hanging out with friends and engaging in fun outdoor activities?<br>
+        <input type="radio" name="q7" id="c" value="c" />Pull an all-nighter at a party with alcohol to waste your time?<br>
+      </fieldset>
+     </br>
+    </br>
+     <center> <button class = "sub" type="button" id="submit" onclick = "calculateScore()">Submit</button>  
+  <button class ="res" type="reset" id="reset" onclick="resetAnswer()">Reset</button> </center>
+    </form>
+  <center><div class = "answer" id="answer">Your result will show up here!</div></center>
+</div>
+
+
+
+  <div class = "Thumb">
+    <div class = "Green-Thumb" > 
+    <center><h10> Good: Green Tier</h10></center>
+    <p>
+    Great job! You are amazingly well informed! Thanks to people like you, the world is becoming more mentally aware. Keep up the great work! </p>
+
+      </div>
+        
+    <div class = "Yellow-Thumb"> 
+    <center><h10> Okay: Yellow Tier
+    </h10></center>
+    <p>
+    Your level of mental awareness is pretty decent. Looks like you are on the right track! Take a look at the Info Section below to see what other improvements you can make! 
+  </p>
+
+    </div>
+        <div class = "Red-Thumb" > 
+  <center> <h10> Poor: Red Tier</h10></center>
+    <p>
+    Uh oh! If you fall into this category, it looks like you need to be more conscious of your mental health. Take a look at our Learn More page below to see how you can get started on the right track!
+  </p>
+
+
+    </div>
+</div>
+
+
+
+  </body>
+  </html>
+
+  
+

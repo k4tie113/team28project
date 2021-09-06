@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+::selection{
+  color: black;
+  background:#8abca7;
+}
+
+body.index{
+width: 100%;
+  height: 100vh;
+  /* overflow: hidden; */
+  padding: 10px;
+
+  margin:0;
+}
+
+
+body.matrix{
+ width: 100%;
+  height: 100vh;
+  /* overflow: hidden; */
+  padding: 10px;
+  background: linear-gradient(-45deg,#8abca7,#c2d5db,#5f9aa5);
+  /*Pastel blue to teal/aqua*/
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+table, th, td {
+ border: 1px solid black;
+}
+
+table {
+  width: 100%;
+  height: 30vh;
+ border-radius: 10pt;
+}
+
+table tbody tr:nth-child(1) td:nth-child(2) {
+   font: 40pt; 
+}
+
+.opening ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1b414b;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+
+li .tag{
+  float: right;
+  color:white;
+  padding: 14px 16px;
+  font-style: oblique	
+}
+
+.opening li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    float: left;
+
+}
+
+.opening li a:hover {
+  background-color:#102e36;
+
+}
+
+.opening .active {
+  background-color: #8abca7;
+}
+
+
+
+
+
+
+.motto{
+  position: relative;
+  background: #fff;
+  max-width: 700px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px -1px 10px 5px #c2d5db;
+}
+
+.motto h4{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  
+}
+
+.icon{
+  color: #c2d5db;
+  background-size: 40px;
+}
+
+.outer h2{
+ 
+  text-align: center;
+   font-size: 40px;
+  font-weight: 700;
+  margin: 20px auto 30px;
+}
+
+.outer h4{
+  text-align: center;
+
+   font-size: 30px;
+  font-weight: 400;
+  margin: 20px auto 30px;
+}
+
+.outer button{
+  width: 25%;
+  color: #fff;
+  font-size: 20px;
+  outline: none;
+  background: #223f6b;
+  border-radius: 15px;
+  border: black;
+  opacity: 0.9;
+  margin-block-end: 5pt;
+  margin-right: 2pt; 
+}
+
+.wrapper{
+  position: relative;
+  background: #fff;
+  max-width: 700px;
+  width: 100%;
+  margin: 120px auto;
+  padding: 30px;
+  border-radius: 5px;
+   box-shadow: 0px -1px 10px 5px  #c2d5db;
+
+}
+.wrapper header{
+  position: relative;
+  font-size: 30px;
+  font-weight: 600;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px; 
+}
+
+table, th{
+  padding: 10pt; 
+}
+
+
+.inputField input{
+  width: 85%;
+  height: 100%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+   margin-block-end: 5pt; 
+}
+
+.inputField input:focus{
+  border-color: #5f9aa5;
+}
+.inputField button input {
+    display: flex;
+  justify-content: space-between;
+}
+#inputField button {float:left;}
+#inputField input {padding-left : 20px; float:left;}
+
+.inputField button{
+  width: 25px;
+  height: 80%;
+  color: #fff;
+  font-size: 12px;
+  outline: none;
+  background: #5f9aa5;
+  border-radius: 2px;
+  border: black;
+  opacity: 0.9;
+  margin-block-end: 5pt;
+  margin-right: 2pt; 
+}
+
+.inputField button:hover,
+.footer button:hover{
+  background: #223f6b;
+}
+.todoList li{
+  position: relative;
+  list-style: none;
+  height: 30px;
+  line-height:30px;
+  margin-bottom: 6px;
+  background: #f2f2f2;
+  border-radius: 3px;
+  padding: 0 15px;
+  cursor: default;
+  overflow: hidden;
+}
+
+.footer button{
+  font-weight: 400;
+  padding: 6px 10px;
+  width: 50 px;
+  height: 60%;
+  color: #fff;
+  font-size: 14px;
+  outline: black;
+  background: #5f9aa5;
+  border-radius: 3px;
+  border: black;
+  opacity: 0.8;
+  left: 10 px; 
+  margin: 10 px; 
+  margin-right: 5px;
+}
+
+.todoList li .icon{
+  position: absolute;
+  right: -45px;
+  background: #e74c3c;
+  width: 45px;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;;
+  transition: all 0.2s ease;
+}
+
+.todoList li:hover .icon{
+  right: 0px;
+}
+
+.wrapper .inputField{
+  display: flex;
+  width: 100%;
+  margin-top:10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .footer{
+  display: flex;
+  width: 100%;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper .footer span{
+  margin-left: 15px; 
+  font-size: 16px;
+}
+
+.inputField button.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.footer button.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.inputField2 input{
+  width: 85%;
+  height: 100%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+   margin-block-end: 5pt; 
+}
+
+.inputField2 input:focus{
+  border-color:#5f9aa5;
+}
+.inputField2 button input {
+    display: flex;
+  justify-content: space-between;
+}
+#inputField2 button {float:left;}
+#inputField2 input {padding-left : 20px; float:left;}
+
+.inputField2 button{
+  width: 25px;
+  height: 80%;
+  color: #fff;
+  font-size: 12px;
+  outline: none;
+  background:#5f9aa5;
+  border-radius: 2px;
+  border: black;
+  opacity: 0.9;
+  margin-block-end: 5pt;
+  margin-right: 2pt; 
+}
+
+.inputField2 button:hover,
+.footer2 button:hover{
+  background: #223f6b;
+}
+.todoList2 li{
+  position: relative;
+  list-style: none;
+  height: 30px;
+  line-height:30px;
+  margin-bottom: 6px;
+  background: #f2f2f2;
+  border-radius: 3px;
+  padding: 0 15px;
+  cursor: default;
+  overflow: hidden;
+}
+.toDoDiv {
+  width:100%;
+  height: 75px;
+  overflow-y:auto;
+  padding: 0;
+  margin: 0px;
+}
+.footer2 button{
+  font-weight: 400;
+  padding: 6px 10px;
+  width: 50 px;
+  height: 60%;
+  color: #fff;
+  font-size: 14px;
+  outline: black;
+  background:#5f9aa5;
+  border-radius: 3px;
+  border: black;
+  opacity: 0.8;
+  left: 10 px; 
+  margin: 10 px; 
+  margin-right: 5px;
+}
+
+.todoList2 li .icon{
+  position: absolute;
+  right: -45px;
+  background: #e74c3c;
+  width: 45px;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;;
+  transition: all 0.2s ease;
+}
+
+.todoList2 li:hover .icon{
+  right: 0px;
+}
+
+.wrapper .inputField2{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top:10px;
+  justify-content: space-between;
+}
+.wrapper .footer2{
+  display: flex;
+  width: 100%;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper .footer2 span{
+  margin-left: 15px; 
+  font-size: 16px;
+}
+
+.inputField2 button.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.footer2 button.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.inputField3 input{
+  width: 85%;
+  height: 100%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+   margin-block-end: 5pt; 
+}
+
+.inputField3 input:focus{
+  border-color: #5f9aa5;
+}
+.inputField3 button input {
+    display: flex;
+  justify-content: space-between;
+}
+#inputField3 button {float:left;}
+#inputField3 input {padding-left : 20px; float:left;}
+
+.inputField3 button{
+  width: 25px;
+  height: 80%;
+  color: #fff;
+  font-size: 12px;
+  outline: none;
+  background: #5f9aa5;
+  border-radius: 2px;
+  border: black;
+  opacity: 0.9;
+  margin-block-end: 5pt;
+  margin-right: 2pt; 
+}
+
+.inputField3 button:hover,
+.footer3 button:hover{
+  background: #223f6b;
+}
+.todoList3 li{
+  position: relative;
+  list-style: none;
+  height: 30px;
+  line-height:30px;
+  margin-bottom: 6px;
+  background: #f2f2f2;
+  border-radius: 3px;
+  padding: 0 15px;
+  cursor: default;
+  overflow: hidden;
+}
+
+.footer3 button{
+  font-weight: 400;
+  padding: 6px 10px;
+  width: 50 px;
+  height: 60%;
+  color: #fff;
+  font-size: 14px;
+  outline: black;
+  background: #5f9aa5;
+  border-radius: 3px;
+  border: black;
+  opacity: 0.8;
+  left: 10 px; 
+  margin: 10 px; 
+  margin-right: 5px;
+}
+
+.todoList3 li .icon{
+  position: absolute;
+  right: -45px;
+  background: #e74c3c;
+  width: 45px;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;;
+  transition: all 0.2s ease;
+}
+
+.todoList3 li:hover .icon{
+  right: 0px;
+}
+
+.wrapper .inputField3{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top:10px;
+  justify-content: space-between;
+}
+.wrapper .footer3{
+  display: flex;
+  width: 100%;
+  
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper .footer3 span{
+  margin-left: 15px; 
+  font-size: 16px;
+}
+
+.inputField3 button.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.footer3 button.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.inputField4 input{
+  width: 85%;
+  height: 100%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+   margin-block-end: 5pt; 
+}
+
+.inputField4 input:focus{
+  border-color: #5f9aa5;
+}
+.inputField4 button input {
+    display: flex;
+  justify-content: space-between;
+}
+#inputField4 button {float:left;}
+#inputField4 input {padding-left : 20px; float:left;}
+
+.inputField4 button{
+  width: 25px;
+  height: 80%;
+  color: #fff;
+  font-size: 12px;
+  outline: none;
+  background: #5f9aa5;
+  border-radius: 2px;
+  border: black;
+  opacity: 0.9;
+  margin-block-end: 5pt;
+  margin-right: 2pt; 
+}
+
+.inputField4 button:hover,
+.footer4 button:hover{
+  background: #223f6b;
+}
+.todoList4 li{
+  position: relative;
+  list-style: none;
+  height: 30px;
+  line-height:30px;
+  margin-bottom: 6px;
+  background: #f2f2f2;
+  border-radius: 3px;
+  padding: 0 15px;
+  cursor: default;
+  overflow: hidden;
+}
+
+.footer4 button{
+  font-weight: 400;
+  padding: 6px 10px;
+  width: 50 px;
+  height: 60%;
+  color: #fff;
+  font-size: 14px;
+  outline: black;
+  background: #5f9aa5;
+  border-radius: 3px;
+  border: black;
+  opacity: 0.8;
+  left: 10 px; 
+  margin: 10 px; 
+  margin-right: 5px;
+}
+
+.todoList4 li .icon{
+  position: absolute;
+  right: -45px;
+  background: #e74c3c;
+  width: 45px;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;;
+  transition: all 0.2s ease;
+}
+
+.todoList4 li:hover .icon{
+  right: 0px;
+}
+
+.wrapper .inputField4{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top:10px;
+  justify-content: space-between;
+}
+.wrapper .footer4{
+  display: flex;
+  width: 100%;
+  
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper .footer4 span{
+  margin-left: 15px; 
+  font-size: 16px;
+}
+
+.inputField4 button.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.footer4 button.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+
